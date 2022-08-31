@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: local('Montserrat'), url("../font/Montserrat-Light.ttf");
+        font-weight: 300;
+        font-display: swap;
+
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: local('Montserrat'), url("../font/Montserrat-Regular.ttf");
+        font-weight: 400;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: local('Montserrat'), url("../font/Montserrat-Medium.ttf");
+        font-weight: 500;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        src: local('Montserrat'), url("../font/Montserrat-Bold.ttf");
+        font-weight: bold;
+        font-display: swap;
+    }
+
+}
+
+
+@layer components {
+
+    .theme-h1
+    {
+        @apply
+        font-montserrat font-bold
+        text-[22px] leading-[28px]
+        sm:text-[30px] sm:leading-[37px]
+        md:text-[30px] md:leading-[40px]
+        lg:text-[38px] lg:leading-[45px]
+        xl:text-[40px] lg:leading-[48px]
+    }
+
+    .theme-h2
+    {
+        @apply
+        font-montserrat font-bold
+        text-[22px] leading-[28px]
+        sm:text-[28px] sm:leading-[38px]
+        md:text-[28px] md:leading-[38px]
+        lg:text-[32px] lg:leading-[42px]
+        xl:text-[30px] lg:leading-[40px]
+    }
+
+    .theme-h3
+    {
+        @apply
+        font-montserrat font-bold
+        text-[18px] leading-[26px]
+        sm:text-[21px] sm:leading-[31px]
+        md:text-[20px] md:leading-[30px]
+        lg:text-[22px] lg:leading-[32px]
+        xl:text-[26px] lg:leading-[34px]
+    }
+
+    .theme-h4
+    {
+        @apply
+        font-montserrat font-[500]
+        text-[16px] leading-[24px]
+        sm:text-[16px] sm:leading-[26px]
+        md:text-[17px] md:leading-[27px]
+        lg:text-[18px] lg:leading-[28px]
+        xl:text-[20px] lg:leading-[24px]
+    }
+
+    .theme-h5
+    {
+        @apply
+        font-montserrat font-[500]
+        text-[15px] leading-[19px]
+        sm:text-[16px] sm:leading-[20px]
+        md:text-[16px] md:leading-[20px]
+        lg:text-[17px] lg:leading-[21px]
+        xl:text-[18px] lg:leading-[22px]
+    }
+
+    .theme-subtitle
+    {
+        @apply
+        font-montserrat font-[500]
+        italic
+        text-[16px] leading-[24px]
+        sm:text-[16px] sm:leading-[26px]
+        md:text-[17px] md:leading-[27px]
+        lg:text-[18px] lg:leading-[28px]
+        xl:text-[22px] lg:leading-[26px]
+    }
+
+    .theme-gap-p
+    {
+        @apply relative flex flex-col gap-4
+    }
+
+    .theme-gap-m
+    {
+        @apply relative flex flex-col gap-6
+    }
+
+    .theme-gap-g
+    {
+        @apply relative flex flex-col gap-10
+    }
+
+    .theme-text-light
+    {
+        @apply
+        font-montserrat font-light
+        text-[16px] leading-[26px]
+        md:text-[17px] md:leading-[27px]
+        lg:text-[18px] lg:leading-[30px]
+    }
+
+    .theme-text-normal
+    {
+        @apply
+        font-montserrat font-normal
+        text-[16px] leading-[26px]
+        md:text-[17px] md:leading-[27px]
+        lg:text-[18px] lg:leading-[30px]
+    }
+
+    .theme-text-strong
+    {
+        @apply
+        font-montserrat font-bold
+        text-[16px] leading-[26px]
+        md:text-[17px] md:leading-[27px]
+        lg:text-[18px] lg:leading-[30px]
+    }
+
+    .theme-description
+    {
+        @apply
+        font-montserrat font-light
+        text-[15px] leading-[22px]
+        md:text-[16px] md:leading-[24px]
+        lg:text-[16px] lg:leading-[24px]
+    }
+
+    .theme-section-p
+    {
+        @apply relative w-full
+        py-[15px] px-[15px]
+        md:p-[20px]
+        xl:py-[30px] xl:px-0
+
+    }
+
+    .theme-section-m
+    {
+        @apply relative w-full
+        py-[20px] px-[20px]
+        md:p-[30px]
+        xl:py-[40px] xl:px-0
+
+    }
+
+    .theme-section-g
+    {
+        @apply relative w-full
+        py-[25px] px-[25px]
+        md:p-[40px]
+        xl:py-[50px] xl:px-0
+
+    }
+
+    .theme-container-p
+    {
+        @apply
+        relative w-full max-w-[800px]
+        mx-auto
+    }
+
+    .theme-container-m
+    {
+        @apply
+        relative w-full max-w-[900px]
+        mx-auto
+    }
+
+    .theme-container-g
+    {
+        @apply
+        relative w-full max-w-[1140px]
+        mx-auto
+    }
+
+    .theme-btn-01
+    {
+
+        @apply
+        relative flex flex-row justify-center items-center w-fit h-[60px]
+        bg-destaque
+        text-branco
+        font-bold
+        box-border py-2 px-6
+        text-[20px]
+        border-0
+        rounded
+        md:max-w-fit
+    }
+
+    .theme-btn-01-full
+    {
+
+        @apply
+        relative flex flex-row justify-center items-center w-full min-w-[300px] h-[70px]
+        bg-destaque
+        text-branco
+        font-bold
+        box-border py-2 px-6
+        rounded
+        text-[20px]
+        border-0
+        md:max-w-fit
+
+    }
+
+    .theme-btn-02
+    {
+
+        @apply
+        relative flex flex-row justify-center items-center w-fit h-[60px]
+        font-bold
+        box-border py-2 px-6
+        border
+        border-destaque
+        text-destaque
+        rounded
+        text-[20px]
+        border-0
+        md:max-w-fit
+
+    }
+
+    .theme-btn-02-full
+    {
+
+        @apply
+        relative flex flex-row justify-center items-center w-[100%] min-w-[300px] h-[70px]
+        font-bold
+        box-border py-2 px-6
+        border
+        border-destaque
+        text-destaque
+        rounded
+        text-[20px]
+        border-0
+        md:max-w-fit
+
+    }
+
+    .theme-header
+    {
+        background-image: url('../img/back-header-mobile.webp');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    @media(min-width: 768px)
+    {
+        .theme-header
+        {
+            background-image: url('../img/back-header.webp');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+    }
+}
