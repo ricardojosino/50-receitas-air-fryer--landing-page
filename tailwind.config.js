@@ -3,6 +3,7 @@ module.exports = {
 
   content: [
     "./src/*.{html,js}",
+    "./src/obrigado/*.{html,js}",
     "./src/index.html"
   ],
 
